@@ -1,10 +1,12 @@
 import dirparcer  # подключаю модуль-парсер
 import fileprops  # подключаю модуль-свойств файла
 import os
-# from PIL import Image
-# from PIL.ExifTags import TAGS, GPSTAGS
+# from PIL import Image  #          ЭТО ПОКА НЕ НАДО
+# from PIL.ExifTags import TAGS  #  ЭТО ПОКА НЕ НАДО (РЕФЫ ПО ТЭГАМ ИЗ ПИЛА)
 
-os.chdir(r'/Users/georgkat/Downloads/')  # подключаем исходную директорию
+# origin_dir = input('введи название директории для парсинга:')  # ручной ввод оригинальной директории
+origin_dir = '/Users/georgkat/Downloads/'  # заглушка к предыдущей строке
+os.chdir(origin_dir)  # подключаем исходную директорию
 d = os.getcwd()  # задаем путь к исходной директории как переменную
 
 dirparcer.parce(d)  # запускаем парсер директорий
