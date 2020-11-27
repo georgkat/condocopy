@@ -4,7 +4,7 @@
 
 import os
 import shutil
-from win32_setctime import setctime
+from win32_setctime import setctime  # украл здесь https://github.com/Delgan/win32-setctime
 
 # ЧАСТЬ ОТВЕЧАЮЩАЯ ЗА КОПИРОВАНИЕ В ВИНДЕ
 
